@@ -10,6 +10,7 @@ def clean(input1,input2):
     x2=x1.dropna(axis=0,how='any')
     x3=x2[~ x2['job'].str.contains('insurance')]
     x4 = x3[~ x3['job'].str.contains('Insurance')]
+
     x5=  x4.drop(labels='id', axis=1)
 
 
